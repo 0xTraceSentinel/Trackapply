@@ -1,0 +1,12 @@
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\bin\Debug\net10.0\Trackapply.Domain.deps.json
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\bin\Debug\net10.0\Trackapply.Domain.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\bin\Debug\net10.0\Trackapply.Domain.pdb
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.AssemblyInfoInputs.cache
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.AssemblyInfo.cs
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.sourcelink.json
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\refint\Trackapply.Domain.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\Trackapply.Domain.pdb
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Domain\obj\Debug\net10.0\ref\Trackapply.Domain.dll

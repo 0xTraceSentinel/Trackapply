@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Trackapply.Api/Trackapply.Api.csproj" />
+  <Project Path="Trackapply.Application/Trackapply.Application.csproj" />
+  <Project Path="Trackapply.Domain/Trackapply.Domain.csproj" />
+  <Project Path="Trackapply.Infrastructure/Trackapply.Infrastructure.csproj" />
+</Solution>

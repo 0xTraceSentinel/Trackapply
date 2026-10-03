@@ -1,0 +1,16 @@
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\bin\Debug\net10.0\Trackapply.Application.deps.json
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\bin\Debug\net10.0\Trackapply.Application.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\bin\Debug\net10.0\Trackapply.Application.pdb
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\bin\Debug\net10.0\Trackapply.Domain.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\bin\Debug\net10.0\Trackapply.Domain.pdb
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.csproj.AssemblyReference.cache
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.AssemblyInfoInputs.cache
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.AssemblyInfo.cs
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.csproj.CoreCompileInputs.cache
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.sourcelink.json
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapp.5C28790D.Up2Date
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\refint\Trackapply.Application.dll
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\Trackapply.Application.pdb
+C:\Users\Anonymous-R\Documents\GitHub\Trackapply\src\Backend\Trackapply.Application\obj\Debug\net10.0\ref\Trackapply.Application.dll
