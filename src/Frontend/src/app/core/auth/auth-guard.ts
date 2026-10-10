@@ -1,5 +1,4 @@
 import { CanActivateFn } from '@angular/router';
 
-export const authGuard: CanActivateFn = (route, state) => {
-    return true;
-};
+// TODO: Check authentication state and redirect to /login once the auth flow is implemented.
+export const authGuard: CanActivateFn = () => true;

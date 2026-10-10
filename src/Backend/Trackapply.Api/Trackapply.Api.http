@@ -1,6 +1,44 @@
 @Trackapply.Api_HostAddress = http://localhost:5099
+@jobApplicationId = 00000000-0000-0000-0000-000000000000
 
-GET {{Trackapply.Api_HostAddress}}/weatherforecast/
+### List job applications
+GET {{Trackapply.Api_HostAddress}}/api/job-applications
 Accept: application/json
 
-###
+### Get a job application
+GET {{Trackapply.Api_HostAddress}}/api/job-applications/{{jobApplicationId}}
+Accept: application/json
+
+### Create a job application
+POST {{Trackapply.Api_HostAddress}}/api/job-applications
+Content-Type: application/json
+
+{
+  "title": "Software Engineer",
+  "company": "Acme Corp",
+  "companyUrl": "https://acme.example.com",
+  "description": "Backend role, .NET + Postgres",
+  "status": "Applied"
+}
+
+### Update a job application
+PUT {{Trackapply.Api_HostAddress}}/api/job-applications/{{jobApplicationId}}
+Content-Type: application/json
+
+{
+  "title": "Senior Software Engineer",
+  "company": "Acme Corp",
+  "companyUrl": "https://acme.example.com",
+  "description": "Backend role, .NET + Postgres"
+}
+
+### Update a job application's status
+PATCH {{Trackapply.Api_HostAddress}}/api/job-applications/{{jobApplicationId}}/status
+Content-Type: application/json
+
+{
+  "status": "Interviewing"
+}
+
+### Delete a job application
+DELETE {{Trackapply.Api_HostAddress}}/api/job-applications/{{jobApplicationId}}

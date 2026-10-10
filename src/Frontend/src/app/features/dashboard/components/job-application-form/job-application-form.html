@@ -1,0 +1,56 @@
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <div class="row">
+        <label>
+            Job title *
+            <input type="text" formControlName="title" placeholder="Software Engineer" />
+            @if (isInvalid('title')) {
+                <small class="field-error">Job title is required (max 250 characters).</small>
+            }
+        </label>
+
+        <label>
+            Company *
+            <input type="text" formControlName="company" placeholder="Acme Corp" />
+            @if (isInvalid('company')) {
+                <small class="field-error">Company is required (max 150 characters).</small>
+            }
+        </label>
+    </div>
+
+    <div class="row">
+        <label>
+            Job posting / company URL
+            <input type="url" formControlName="companyUrl" placeholder="https://..." />
+            @if (isInvalid('companyUrl')) {
+                <small class="field-error">Enter a valid http(s) URL.</small>
+            }
+        </label>
+
+        <label>
+            Status
+            <select formControlName="status">
+                @for (status of statuses; track status) {
+                    <option [value]="status">{{ status }}</option>
+                }
+            </select>
+        </label>
+    </div>
+
+    <label>
+        Notes
+        <textarea
+            formControlName="description"
+            rows="3"
+            placeholder="Role details, contacts, next steps..."
+        ></textarea>
+        @if (isInvalid('description')) {
+            <small class="field-error">Notes must be 4000 characters or fewer.</small>
+        }
+    </label>
+
+    <div class="actions">
+        <button class="btn" type="submit" [disabled]="saving()">
+            {{ saving() ? 'Saving...' : 'Add application' }}
+        </button>
+    </div>
+</form>

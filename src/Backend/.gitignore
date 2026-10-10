@@ -3,3 +3,24 @@
 # ==============================
 bin/
 obj/
+
+# ==============================
+# IDE
+# ==============================
+.vs/
+*.user
+*.suo
+
+# ==============================
+# Secrets & credentials
+# ==============================
+appsettings.Local.json
+appsettings.*.Local.json
+secrets.json
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.pem

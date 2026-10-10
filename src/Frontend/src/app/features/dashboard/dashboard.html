@@ -1,1 +1,98 @@
-<p>dashboard works!</p>
+<h1>Job applications</h1>
+
+<section class="card">
+    <h2>Add an application</h2>
+    <app-job-application-form [saving]="saving()" (submitted)="createApplication($event)" />
+</section>
+
+@if (error(); as message) {
+    <p class="alert-error" role="alert">{{ message }}</p>
+}
+
+<section class="card">
+    <div class="filters" role="group" aria-label="Filter by status">
+        <button
+            type="button"
+            class="chip"
+            [class.selected]="statusFilter() === 'All'"
+            (click)="statusFilter.set('All')"
+        >
+            All <span class="count">{{ applications().length }}</span>
+        </button>
+        @for (status of statuses; track status) {
+            <button
+                type="button"
+                class="chip"
+                [class.selected]="statusFilter() === status"
+                (click)="statusFilter.set(status)"
+            >
+                {{ status }} <span class="count">{{ countsByStatus()[status] }}</span>
+            </button>
+        }
+    </div>
+
+    @if (loading()) {
+        <p class="muted">Loading applications...</p>
+    } @else {
+        <ul class="application-list">
+            @for (application of filteredApplications(); track application.id) {
+                <li class="application">
+                    <div class="details">
+                        <strong>{{ application.title }}</strong>
+                        <span>
+                            @if (application.companyUrl) {
+                                <a
+                                    [href]="application.companyUrl"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{ application.company }}
+                                </a>
+                            } @else {
+                                {{ application.company }}
+                            }
+                        </span>
+                        @if (application.description) {
+                            <p class="description">{{ application.description }}</p>
+                        }
+                        <small class="muted">
+                            Added {{ application.createdAt | date: 'mediumDate' }}
+                            @if (application.updatedAt) {
+                                &middot; Updated {{ application.updatedAt | date: 'mediumDate' }}
+                            }
+                        </small>
+                    </div>
+
+                    <div class="controls">
+                        <select
+                            #statusSelect
+                            [attr.aria-label]="'Status for ' + application.title"
+                            (change)="changeStatus(application, statusSelect)"
+                        >
+                            @for (status of statuses; track status) {
+                                <option [value]="status" [selected]="status === application.status">
+                                    {{ status }}
+                                </option>
+                            }
+                        </select>
+                        <button
+                            type="button"
+                            class="btn btn-ghost"
+                            (click)="deleteApplication(application)"
+                        >
+                            Delete
+                        </button>
+                    </div>
+                </li>
+            } @empty {
+                <li class="muted empty">
+                    @if (statusFilter() === 'All') {
+                        No applications yet. Add your first one above.
+                    } @else {
+                        No applications with status "{{ statusFilter() }}".
+                    }
+                </li>
+            }
+        </ul>
+    }
+</section>

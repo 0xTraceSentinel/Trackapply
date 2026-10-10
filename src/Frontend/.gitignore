@@ -40,6 +40,13 @@ testem.log
 /typings
 __screenshots__/
 
+# Secrets & credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
 # System files
 .DS_Store
 Thumbs.db
